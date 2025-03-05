@@ -104,3 +104,9 @@ Route::get('/withname', function() {
 // controller
 Route::get('/displaymessage', [mycontroller::class, 'display']);
 Route::get('/showmessage', [mycontroller::class, 'showMessage']);
+
+// even or odd
+Route::get('/evenodd', function() {
+    $num = 7;
+    return view('evenodd', ['x' => $num]);
+});
